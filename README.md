@@ -1,6 +1,6 @@
 # always-check-twice
 
-A simple demo that demonstrates how most basic hijacking of crypto wallet addresses work.
+A simple demo that demonstrates one of the many ways how most basic hijacking of crypto wallet addresses work.
 
 ---
 Test it here:
